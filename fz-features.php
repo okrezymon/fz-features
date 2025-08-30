@@ -127,4 +127,5 @@ if ( !function_exists('fz_features_create_dummy_books' ) ) {
 add_action( 'init', 'fz_features_create_dummy_books', 25 );
 
 require_once FZ_FEATURES_PATH . 'includes/functions/assets.php';
+require_once FZ_FEATURES_PATH . 'includes/functions/ajax.php';
 require_once FZ_FEATURES_PATH . 'includes/custom-post-types/fz-book.php';
