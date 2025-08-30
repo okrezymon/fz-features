@@ -17,3 +17,5 @@ function fz_features_load_textdomain() {
     load_plugin_textdomain( 'fz-features', false, dirname( plugin_basename(__FILE__) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'fz_features_load_textdomain' );
+
+require_once FZ_FEATURES_PATH . 'includes/assets.php';
