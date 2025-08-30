@@ -18,5 +18,5 @@ function fz_features_load_textdomain() {
 }
 add_action( 'plugins_loaded', 'fz_features_load_textdomain' );
 
-require_once FZ_FEATURES_PATH . 'includes/assets.php';
+require_once FZ_FEATURES_PATH . 'includes/functions/assets.php';
 require_once FZ_FEATURES_PATH . 'includes/custom-post-types/fz-book.php';
