@@ -21,6 +21,9 @@ if ( !function_exists( 'fz_features_load_textdomain' ) ) {
 
 add_action( 'plugins_loaded', 'fz_features_load_textdomain' );
 
+/*
+ * Function for setting placeholder image for dummy content
+ */
 if ( !function_exists('fz_features_add_placeholder_image' ) ) {
     function fz_features_add_placeholder_image() {
 
@@ -52,6 +55,9 @@ if ( !function_exists('fz_features_add_placeholder_image' ) ) {
 
 register_activation_hook( __FILE__, 'fz_features_add_placeholder_image' );
 
+/*
+ * Function for creating dummy taxonomies
+ */
 if ( !function_exists('fz_features_create_dummy_taxonomies' ) ) {
     function fz_features_create_dummy_taxonomies() {
         $genres = [
@@ -69,6 +75,9 @@ if ( !function_exists('fz_features_create_dummy_taxonomies' ) ) {
 
 add_action( 'init', 'fz_features_create_dummy_taxonomies', 20 );
 
+/*
+ * Function for creating dummy books
+ */
 if ( !function_exists('fz_features_create_dummy_books' ) ) {
     function fz_features_create_dummy_books() {
 

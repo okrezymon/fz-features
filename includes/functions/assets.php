@@ -3,7 +3,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
-
+/*
+ * This covers Task #2 as well as setting ajax for displaying other books component
+ */
 function fz_features_enqueue_assets() {
     wp_enqueue_script( 'fz-features-scripts', FZ_FEATURES_URL . 'assets/js/fz-scripts.js', array('jquery'), '1.0', true );
 
