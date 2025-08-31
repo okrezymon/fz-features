@@ -1,0 +1,60 @@
+.fz-faq-block {
+	h2 {
+		text-align: center;
+		font-size: 25px;
+	}
+	&__list {
+		counter-reset: faq-counter;
+		dt {
+			padding: 25px 50px 25px 20px;
+			font-size: 18px;
+			background: none;
+			text-align: left;
+			margin-bottom: 3px;
+			transition: .5s;
+			counter-increment: faq-counter;
+			position: relative;
+			border: 2px solid rgba(182, 182, 182, 0.1);
+			border-radius: 10px;
+			cursor: pointer;
+			&:before {
+				content: counter(faq-counter) ". ";
+				font-weight: bold;
+				margin-right: 5px;
+				color: #333;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				width: 20px;
+				height: 20px;
+				background-image: url('../../assets/img/arrow.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				transform: translateY(-50%);
+				transform-origin: center;
+				transition: .5s;
+				cursor: pointer;
+			}
+			&.selected {
+				& + dd {
+					max-height: max-content;
+					padding: 20px;
+				}
+				&::after {
+					transform: rotate(180deg) translateY(50%);
+				}
+			}
+		}
+		dd {
+			margin: 0;
+			font-size: 16px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.5s ease, padding 0.5s ease;
+			padding: 0 20px;
+		}
+	}
+}

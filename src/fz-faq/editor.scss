@@ -1,0 +1,32 @@
+.fz-faq-block {
+	border: 1px dashed #c4c4c4;
+	padding: 20px;
+	margin-bottom: 24px;
+	background-color: #f9f9f9;
+	border-radius: 6px;
+
+	&__title {
+		margin-top: 0;
+		font-size: 25px;
+		margin-bottom: 16px;
+		color: #333;
+		text-align: center;
+	}
+	.wp-block-heading {
+		&:before {
+			content: "Q";
+			font-weight: bold;
+			margin-right: 6px;
+			color: #007cba;
+		}
+		margin: 12px 0 4px 0;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.wp-block-paragraph {
+		margin: 0 0 12px 0;
+		padding-left: 16px;
+		color: #555;
+		font-size: 16px;
+	}
+}
